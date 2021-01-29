@@ -29,7 +29,7 @@ On macOS, run the following commands in terminal
 * `brew install glew`
 * `brew install glfw3`
 
-For GLM, you need to execute two commands
+For GLM, you need to execute two commands. [See here for more information](http://macappstore.org/glm/)
 
 * `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null`
 * `brew install glm`
