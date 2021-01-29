@@ -12,7 +12,7 @@ also need to install GLEW, GLFW, and GLM.
 * GLFW: Implements our window and user interaction events, such as mouse and keyboard 
 * GLM: Implements useful vector and matrix functionality for graphics
 
-On windows, the dependencies are included in this repository. For macOS, you will need to install them separately.
+On windows, the dependencies are included in this repository. For macOS, you will need to install a subset of them separately.
 
 ## Windows
 
@@ -29,10 +29,7 @@ On macOS, run the following commands in terminal
 * `brew install glew`
 * `brew install glfw3`
 
-For GLM, you need to execute two commands. [See here for more information](http://macappstore.org/glm/)
-
-* `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null`
-* `brew install glm`
+GLM is included with this download
 
 # Build on windows
 
