@@ -1,5 +1,7 @@
 # getting-started
-A simple demo to test whether GLFW, GLEW, OpenGL, and GLM are setup correctly
+A simple demo to test whether GLFW, GLEW, OpenGL, and GLM are setup correctly. Pressing `Escape` closes the window.
+
+![](window-test.gif)
 
 # Tools and dependencies
 
