@@ -4,6 +4,7 @@
 //   https://www.glfw.org/docs/3.3/quick.html
 
 #include "AGL.h"
+#include "AGLM.h"
 #include <cmath>
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -50,11 +51,14 @@ int main(int argc, char** argv)
   {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear the buffers
 
-    // ASN: Animate the screen color as a test
+    // Animate the screen color as a test
     double time = glfwGetTime();
     double red = (sin(time) + 1) * 0.5; // map sin value [-1,1] to color value [0,1]
     double blue = (cos(time) + 1) * 0.5; // map cos value [-1,1] to color value [0,1]
-    glClearColor(red, 0.0, blue, 1.0);
+
+    // Create a vector to test glm
+    glm::vec3 color(red, 0, blue);
+    glClearColor(color.x, color.y, color.z, 1.0);
 
     // Swap front and back buffers
     glfwSwapBuffers(window);

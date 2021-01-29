@@ -1,3 +1,9 @@
+*~
+*.swp
+*.swo
+build
+bin
+
 # Prerequisites
 *.d
 
