@@ -57,8 +57,10 @@ From terminal, navigate to the folder containing this code. Then, run the follow
 * `make`
 * `./bin/testGLFW`
 
+Running these commands in terminal [should look something like this](build-mac.txt).
+
 Running `cmake ..` will generate Makefiles for this project. Running `make` compiles the program. The last command runs the compiled program. You can also use Visual Studio to run and debug this program. It is important to create the subdirectory `build`, to 
 keep our repository clean of generated files.
 
-If you don't know where to start compiling and running C++, or need a refresher, [this video shows how to build, run, and debug with terminal or Visual Studio Code](https://youtu.be/DEytbPbfZVo)
+If you don't know where to start compiling and running C++, or need a refresher, [this video shows how to build, run, and debug with terminal or Visual Studio Code on macOS](https://youtu.be/DEytbPbfZVo)
 
