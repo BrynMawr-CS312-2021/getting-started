@@ -41,6 +41,8 @@ From git bash, run the following commands
 * `cd build`
 * `cmake -G "Visual Studio 16 2019" ..`
 
+Running these commands in git bash [should look something like this](build-win.txt).
+
 The above commands will create Visual Studio project files inside the build folder. It is important to create the subdirectory `build`, to 
 keep our repository clean of generated files. 
 
