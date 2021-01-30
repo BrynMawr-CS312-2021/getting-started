@@ -36,9 +36,9 @@ elseif (APPLE)
 
   set(INCLUDE_DIRS
     /System/Library/Frameworks
+    /external/include
     /usr/local/include)
 
-  set(LIBRARY_DIRS libgraphics)
   set(CORE ${GLFW} ${GL_LIB})
 
 endif()
