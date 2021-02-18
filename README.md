@@ -29,7 +29,7 @@ On macOS, run the following commands in terminal
 * `brew install glew`
 * `brew install glfw3`
 
-GLM is included with this repository.
+GLM is included with this repository but you can also install it [using the instructions here](http://macappstore.org/glm/).
 
 # Build on windows
 
