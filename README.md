@@ -18,7 +18,7 @@ On windows, the dependencies are included in this repository. For macOS, you wil
 
 On windows
 
-* [Download and install git](git-scm.com/download/win).
+* [Download and install git](https://git-scm.com/download/win).
 * [Download and install cmake](https://github.com/Kitware/CMake/releases/download/v3.19.4/cmake-3.19.4-win64-x64.msi).
 
 ## macOS
