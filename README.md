@@ -31,6 +31,18 @@ On macOS, run the following commands in terminal
 
 GLM is included with this repository but you can also install it [using the instructions here](http://macappstore.org/glm/).
 
+## Ubuntu
+
+On Ubuntu, run the following commands in terminal
+
+* `sudo apt-get install cmake`
+* `sudo apt-get libglew-dev`
+* `sudo apt-get install libglfw3-dev`
+* `sudo apt-get install libglfw3-dev`
+
+
+GLM is included with this repository but you can also install it [using the instructions here](http://macappstore.org/glm/).
+
 # Build on windows
 
 First, open the folder containing this source in Explorer. From here, right-click and open `Git Bash`. This will open a terminal window.
