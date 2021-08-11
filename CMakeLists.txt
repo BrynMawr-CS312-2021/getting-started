@@ -24,6 +24,22 @@ if (WIN32) # Includes win64 platforms
   set(CORE ${GLEW} ${GLFW} opengl32.lib)
   set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
+elseif (UNIX)
+
+  set(CMAKE_CXX_FLAGS "-Wall -g -std=c++11 -Wno-comment")
+  set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+  set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+  set(OpenGL_GL_PREFERENCE GLVND)
+
+  FIND_PACKAGE(OpenGL REQUIRED) 
+  FIND_PACKAGE(GLEW REQUIRED)
+
+  set(INCLUDE_DIRS .)
+  set(LIBRARY_DIRS /usr/X11R6/lib /usr/local/lib)
+
+  add_definitions(-DUNIX)
+  set(CORE GLEW glfw GL X11)
+
 elseif (APPLE)
 
   set(CMAKE_MACOSX_RPATH 1)
