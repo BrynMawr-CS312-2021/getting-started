@@ -38,10 +38,10 @@ On Ubuntu, run the following commands in terminal
 * `sudo apt-get install cmake`
 * `sudo apt-get libglew-dev`
 * `sudo apt-get install libglfw3-dev`
-* `sudo apt-get install libglfw3-dev`
 
+GLM is included with this repository but you can also install it.
 
-GLM is included with this repository but you can also install it [using the instructions here](http://macappstore.org/glm/).
+* `sudo apt-get install libglm-dev`
 
 # Build on windows
 
