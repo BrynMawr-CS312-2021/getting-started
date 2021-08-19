@@ -78,3 +78,16 @@ keep our repository clean of generated files.
 
 If you don't know where to start compiling and running C++, or need a refresher, [this video shows how to build, run, and debug with terminal or Visual Studio Code on macOS](https://youtu.be/DEytbPbfZVo)
 
+# Build on Ubuntu
+
+From terminal, navigate to the folder containing this code. Then, run the following commands
+
+* `mkdir build`
+* `cd build`
+* `cmake ..`
+* `make`
+* `./bin/testGLFW`
+
+Running `cmake ..` will generate Makefiles for this project. Running `make` compiles the program. The last command runs the compiled program. You can also use Visual Studio to run and debug this program. It is important to create the subdirectory `build`, to 
+keep our repository clean of generated files.
+
