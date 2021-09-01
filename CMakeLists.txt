@@ -1,5 +1,5 @@
 project(CS312-GettingStarted)
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0)
 
 if (WIN32) # Includes win64 platforms
 
@@ -24,26 +24,11 @@ if (WIN32) # Includes win64 platforms
   set(CORE ${GLEW} ${GLFW} opengl32.lib)
   set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
-elseif (UNIX)
-
-  set(CMAKE_CXX_FLAGS "-Wall -g -std=c++11 -Wno-comment")
-  set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
-  set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
-  set(OpenGL_GL_PREFERENCE GLVND)
-
-  FIND_PACKAGE(OpenGL REQUIRED) 
-  FIND_PACKAGE(GLEW REQUIRED)
-
-  set(INCLUDE_DIRS .)
-  set(LIBRARY_DIRS /usr/X11R6/lib /usr/local/lib)
-
-  add_definitions(-DUNIX)
-  set(CORE GLEW glfw GL X11)
-
 elseif (APPLE)
 
+  message("Build for macOS")
   set(CMAKE_MACOSX_RPATH 1)
-  set(CMAKE_CXX_FLAGS "-Wall -Wno-deprecated-declarations -g -stdlib=libc++ -std=c++11")
+  set(CMAKE_CXX_FLAGS "-Wall -Wno-deprecated-declarations -g -stdlib=libc++ -std=c++17")
   set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
   set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
   find_library(GL_LIB OpenGL)
@@ -56,6 +41,22 @@ elseif (APPLE)
     /usr/local/include)
 
   set(CORE ${GLFW} ${GL_LIB})
+
+elseif (UNIX)
+
+  set(CMAKE_CXX_FLAGS "-Wall -g -std=c++17 -Wno-comment")
+  set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+  set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+  set(OpenGL_GL_PREFERENCE GLVND)
+
+  FIND_PACKAGE(OpenGL REQUIRED) 
+  FIND_PACKAGE(GLEW REQUIRED)
+
+  set(INCLUDE_DIRS .)
+  set(LIBRARY_DIRS /usr/X11R6/lib /usr/local/lib)
+
+  add_definitions(-DUNIX)
+  set(CORE GLEW glfw GL X11)
 
 endif()
 
