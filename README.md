@@ -69,7 +69,7 @@ From terminal, navigate to the folder containing this code. Then, run the follow
 * `cd build`
 * `cmake ..`
 * `make`
-* `./bin/testGLFW`
+* `../bin/testGLFW`
 
 Running these commands in terminal [should look something like this](build-mac.txt).
 
@@ -86,7 +86,7 @@ From terminal, navigate to the folder containing this code. Then, run the follow
 * `cd build`
 * `cmake ..`
 * `make`
-* `./bin/testGLFW`
+* `../bin/testGLFW`
 
 Running `cmake ..` will generate Makefiles for this project. Running `make` compiles the program. The last command runs the compiled program. You can also use Visual Studio to run and debug this program. It is important to create the subdirectory `build`, to 
 keep our repository clean of generated files.
